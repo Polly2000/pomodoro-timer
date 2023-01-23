@@ -1,8 +1,10 @@
-import './App.css';
+import Timer from './Timer';
+import './App.scss';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
+      <Timer />
     </div>
   );
 }
