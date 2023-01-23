@@ -1,7 +1,10 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { Button } from '@mui/material';
-import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+
+import PlayButton from './PlayButton';
+import PauseButton from './PauseButton';
+import BackButton from './BackButton';
+import SettingsButton from './SettingsButton';
 
 const Timer = () => {
 
@@ -11,8 +14,8 @@ const Timer = () => {
   return(
     <div className="timer">
       <CircularProgressbar 
-        value={50} 
-        text={`50%`}
+        value={60} 
+        text={`60%`}
         styles={buildStyles({
           textColor: '#fff',
           pathColor: red,
@@ -20,9 +23,13 @@ const Timer = () => {
         })}
       />
       <div>
-        <button className="button">
-          <PlayCircleIcon fontSize="large"/>
-        </button>
+        <div className="block">
+          <PlayButton />
+          <PauseButton />
+        </div>
+        <div className="block">
+          <SettingsButton />
+        </div>
       </div>
     </div>
   )
