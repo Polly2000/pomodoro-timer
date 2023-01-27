@@ -23,11 +23,11 @@ const Timer = () => {
         })}
       />
       <div>
-        <div className="block">
+        <div style={{marginTop: '20px'}}>
           <PlayButton />
           <PauseButton />
         </div>
-        <div className="block">
+        <div style={{marginTop: '20px'}}>
           <SettingsButton />
         </div>
       </div>
