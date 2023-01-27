@@ -1,3 +1,8 @@
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
 .app {
   padding-top: 50px;
   max-width: 340px;
@@ -12,6 +17,13 @@ button {
   border: 0;
   width: 100px;
   cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
 }
 
 .withtext {
@@ -29,6 +41,46 @@ button {
   }
 }
 
-.icon_settings {
-  margin-top: 5px;
+.block {
+  margin-top: 20px;
+}
+
+.settings {
+  text-align: left;
+
+  &__icon {
+    margin-top: 5px;
+  }
+
+}
+
+
+.slider {
+  height: 40px;
+  border-radius: 20px;
+
+  &_red {
+    border: 2px solid var(--red);
+  }
+
+  &_green {
+    border: 2px solid var(--green);
+  }
+
+  &__thumb {
+    // background-color: var(--red);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+    &_red {
+      background-color: var(--red);
+    }
+
+    &_green {
+      background-color: var(--green);
+    }
+  }
+
 }

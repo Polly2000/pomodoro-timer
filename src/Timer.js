@@ -8,8 +8,8 @@ import SettingsButton from './SettingsButton';
 
 const Timer = () => {
 
-  const red = '#f54e4e';
-  const green = '#4aec8c';
+  const red = "#f54e4e";
+  const green = "#4aec8c";
 
   return(
     <div className="timer">
@@ -23,11 +23,11 @@ const Timer = () => {
         })}
       />
       <div>
-        <div style={{marginTop: '20px'}}>
+        <div className="block">
           <PlayButton />
           <PauseButton />
         </div>
-        <div style={{marginTop: '20px'}}>
+        <div className="block">
           <SettingsButton />
         </div>
       </div>
