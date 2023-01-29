@@ -1,5 +1,5 @@
 # Pomodoro-timer with React
-
+![alt text](pomodoroscreen.png)
 
 # Getting Started with Create React App
 
